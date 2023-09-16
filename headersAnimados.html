@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div class="headers">
+        <h1 class="header" >Heading1</h1>
+        <h2 class="header" >Heading2</h2>
+        <h3 class="header" >Heading3</h3>
+        <h4 class="header" >Heading4</h4>
+        <h5 class="header" >Heading5</h5>
+        <h6 class="header" >Heading6</h6>
+        </div>
+        <style>
+            body 
+            {
+                background-image: url(./fotos/The\ Space\ -\ Random.jpg);
+                color: aliceblue;
+            }
+            .header
+            {
+                font-family: sans-serif;
+                margin-left: 80px;
+                padding: 20px;
+                animation-name: mudaCor; 
+                animation-duration: 6s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: backwards;
+                animation-iteration-count: infinite;
+
+            }
+            @keyframes mudaCor 
+            {
+                0% 
+                {
+                    color: aliceblue;
+                }
+                10%
+                {
+                    
+                    color: blue;
+                }
+                17%
+                {                       
+                    color: aliceblue;
+                }
+                100%
+                {
+                    color: aliceblue;
+                }
+            }
+            h2
+            {
+                animation-delay: 1s;
+            }
+            h3
+            {
+                animation-delay: 2s;
+            }
+            h4
+            {
+                animation-delay: 3s;
+            }
+            h5
+            {
+                animation-delay: 4s;
+            }
+            h6
+            {
+                animation-delay: 5s;
+            }
+        </style>
+    </body>
+</html>
