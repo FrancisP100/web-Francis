@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=                                                                 "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada abaixo</h1>
+    <style>
+        body
+        {
+            background: linear-gradient(rgba(200,240,255,1),rgba(150,200,255,1));
+            background-repeat: no-repeat;
+        }
+        h1 
+        {
+            font-family: sans-serif;
+        }
+    </style>
+        <input type="number" name="txtb1" id="txtb1">
+        <input type="button" value="Gerar" onclick="tabuada()">
+        <ul id="tabu1"></ul>
+
+    <script>
+        function tabuada()
+        {
+            var text1 = document.getElementById('txtb1')
+            const numero = Number(text1.value)
+            const elemenTabuada = document.getElementById('tabu1')
+            for (let index = 1; index <= 12; index++) 
+            {
+                const resultado = numero * index
+                const li = document.createElement('li') 
+                li.textContent = `${numero} x ${index} = ${resultado}`
+                elemenTabuada.appendChild(li)
+            }
+        }
+    </script>
+</body>
+</html>
