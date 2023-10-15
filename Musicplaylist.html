@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibes</title>
+</head>
+<body>
+    <div>
+    <h1> Francis's Vibes</h1>
+    </div>
+    <br/>
+    <div id="playlist">
+        <div class="item">
+            <div class="musicdiv">
+            <div id="musicfoto1"></div>
+            </div>
+            <div class="play">
+                <h2 class="playtext">Darkside</h2>
+                <h3 class="playtext">Alan Walker</h3>
+                <audio class="music" id="music1" controls>
+                    <source src="./media/Alan Walker - Darkside (feat. Au Ra and Tomine Harket).mp3" type="audio/mpeg">
+                </audio>
+            </div>            
+        </div><br/>
+        <div class="item">
+            <div class="musicdiv">
+                <div id="musicfoto2"></div>
+            </div>
+            <div class="play">
+                <h2 class="playtext">Animes No Topo</h2>
+                <h3 class="playtext">7Minutoz</h3>
+                <audio class="music" id="music2" controls>
+                    <source src="./media/ANIMES NO TOPO Rap Goku, Naruto, Luffy, Seiya, Kira, Midoriya, Eren, Meliodas, Natsu e Kaneki.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="item">
+            <div class="musicdiv">
+                <div id="musicfoto3"></div>
+            </div>
+            <div class="play">
+                <h2 class="playtext">Glorious</h2>
+                <h3 class="playtext">Boody(Rock Dog)</h3>
+                <audio class="music" id="music3" controls>
+                    <source src="./media/Adam Friedman _ Glorious.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="item">
+            <div class="musicdiv">
+                <div id="musicfoto4"></div>
+            </div>
+            <div class="play">
+                <h2 class="playtext">Being Human</h2>
+                <h3 class="playtext">Rebecca Sugar</h3>
+                <audio class="music" id="music4" controls>
+                    <source src="./media/Being Human (Complete) - Steven Universe Future.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <style>
+        body
+        {   
+            color:aliceblue;
+            text-shadow: 1px 1px black;
+            font-family: sans-serif;
+            background-image: url("./Assets/background5600008.jpg");
+
+        }
+        div#playlist
+        {
+            height: 500px;
+            width: 95%;
+            background: rgba(0,0,0,.4);
+            margin-left: 5%;
+        }
+        div.item
+        {
+            position: relative;
+            padding-left: 15px;
+            padding-top: 15px;
+            background-color:rgba(50,200,255,.5);
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 5px solid black;
+        }
+        div.play
+        {
+            height: 85%;
+            width: 75%;
+            position: relative;
+        }
+        div#musicfoto1
+        {
+            position: relative;
+            height: 100%;
+            width: 120px;
+            background: url(./Assets/black-live-matters-landing-pages-template_7605-448.avif);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        h2.playtext
+        {   
+            text-align: center;
+        }
+        h3.playtext
+        {
+            text-align: center;   
+        }
+        div#musicfoto2
+        {
+            position: relative;
+            height: 100%;
+            width: 120px;
+            background: url(./Assets/Luffy-Gear-5-fixed.png);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        
+        div#musicfoto3
+        {
+            position: relative;
+            height: 100%;
+            width: 120px;
+            background: url(./Assets/1d66bbe6-d3c9-42e1-a24b-45905af03ae4.jpeg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        
+        div#musicfoto4
+        {
+            position: relative;
+            height: 100%;
+            width: 120px;
+            background: url(./Assets/Steven\ Beach.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        audio
+        {
+            margin-left: 30px;
+            position: relative;
+            margin-top: 15px;
+        }
+    </style>
+</body>
+</html>
